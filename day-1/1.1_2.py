@@ -1,0 +1,1 @@
+print(len([1 for i in range(len(open("input.txt", "r").readlines())) if (sum([{"R": 1, "L": -1}[line[0]] * int(line[1:]) for line in open("input.txt", "r").readlines()][:i+1]) + 50) % 100 == 0]))
